@@ -1,0 +1,118 @@
+{
+  "iclr_2018_ryQu7f-RZ": {
+    "reviews": [
+      {
+        "review_id": "HkhdRaVlG",
+        "influential_part": "\"The paper presents three contributions: 1) it shows that the proof of convergence Adam is wrong; 2) it presents adversarial and stochastic examples on which Adam converges to the worst possible solution (i.e. there is no hope to just fix Adam's proof); 3) it proposes a variant of Adam called AMSGrad that fixes the problems in the original proof and seems to have good empirical properties.\"\n\n\"The contribution of this paper is very relevant to ICLR and, as far as I know, novel. The result is clearly very important for the deep learning community.\"\n\n\"One note on the generality of the results: the papers states that some of the results could apply to RMSProp too.\"\n\n\"Overall, I strongly suggest to accept this paper.\""
+      },
+      {
+        "review_id": "H15qgiFgf",
+        "influential_part": "1. \"This work identifies a mistake in the existing proof of convergence of Adam, which is among the most popular optimization methods in deep learning.\"\n2. \"Moreover, it gives a simple 1-dimensional counterexample with linear losses on which Adam does not converge.\"\n3. \"The same issue also affects RMSprop, which may be viewed as a special case of Adam without momentum.\"\n4. \"A new method, called AMSGrad is therefore proposed, which modifies Adam by forcing these matrices to be decreasing.\"\n5. \"It is then shown that AMSGrad does satisfy essentially the same convergence bound as the one previously claimed for Adam.\"\n6. \"Given the popularity of Adam, I consider this paper to make a very interesting observation.\"\n7. \"The problem with Adam is that the \"learning rate\" matrices V_t^{1/2}/alpha_t are not monotonically decreasing.\"\n8. \"Experiments and simulations are provided that support the theoretical analysis.\"\n9. \"Apart from some issues with the technical presentation (see below), the paper is well-written.\""
+      },
+      {
+        "review_id": "Hyl2iJgGG",
+        "influential_part": "1. \"This paper examines the very popular and useful ADAM optimization algorithm, and locates a mistake in its proof of convergence (for convex problems).\"\n2. \"Not only that, the authors also show a specific toy convex problem on which ADAM fails to converge.\"\n3. \"Once the problem was identified to be the decrease in v_t (and increase in learning rate), they modified the algorithm to solve that problem.\"\n4. \"They then show the modified algorithm does indeed converge and show some experimental results comparing it to ADAM.\"\n5. \"The paper is well written, interesting and very important given the popularity of ADAM.\"\n6. \"That being said, I understand that the focus of this work is theoretical and well deserves to be accepted based on the theoretical work.\""
+      }
+    ]
+  },
+  "iclr_2018_Hk2aImxAb": {
+    "reviews": [
+      {
+        "review_id": "rJSuJm4lG",
+        "influential_part": "1. \"This work proposes a variation of the DenseNet architecture that can cope with computational resource limits at test time.\"\n2. \"My only major concern is the degree of technical novelty with respect to the original DenseNet paper of Huang et al. (2017).\"\n3. \"The authors add a hierarchical, multi-scale structure and show that DenseNet can better cope with it than ResNet (e.g., Fig. 3).\"\n4. \"However, this work is basically an extension of the DenseNet approach with a new problem statement and additional, in-depth analysis.\""
+      },
+      {
+        "review_id": "SJ7lAAYgG",
+        "influential_part": "1- \"This paper presents a method for image classification given test-time computational budgeting constraints.\"\n2- \"A convolutional neural network structure with a diagonal propagation layout over depth and scale is used, so that each activation map is constructed using dense connections from both same and finer scale features.\"\n3- \"In this way, coarse-scale maps are constructed quickly, then continuously updated with feed-forward propagation from lower layers and finer scales, so they can be used for image classification at any intermediate stage.\"\n4- \"Overall, this seems like a natural and effective approach, and achieves good results.\""
+      },
+      {
+        "review_id": "rk6gRwcxz",
+        "influential_part": "\"This paper introduces a new model to perform image classification with limited computational resources at test time. The model is based on a multi-scale convolutional neural network similar to the neural fabric (Saxena and Verbeek 2016), but with dense connections (Huang et al., 2017) and with a classifier at each layer.\"\n\n\"I think that this paper present a very powerful approach to speed-up the computational cost of a CNN at test time and clearly explains some of the common trade-offs between speed and accuracy and how to improve them. The experimental evaluation is complete and accurate.\""
+      }
+    ]
+  },
+  "iclr_2018_H196sainb": {
+    "reviews": [
+      {
+        "review_id": "SyE3AHgxG",
+        "influential_part": "1. \"The paper presents a new method for obtaining a bilingual dictionary, without requiring any parallel data between the source and target languages.\"\n\n2. \"The approach is evaluated on single word translation, cross-lingual word similarity, and sentence translation retrieval tasks.\"\n\n3. \"The paper presents an interesting approach which achieves good performance.\"\n\n4. \"The work is presented clearly, the approach is well-motivated and related to previous studies, and a thorough evaluation is performed.\"\n\n5. \"My one concern is that the supervised approach that the paper compares to is limited: it is trained on a small fixed number of anchor points, while the unsupervised method uses significantly more words.\"\n\n6. \"The paper is well-written, relevant and interesting. I therefore recommend that the paper be accepted.\""
+      },
+      {
+        "review_id": "rJEg3TtxM",
+        "influential_part": "\"The paper proposes a method to learn bilingual dictionaries without parallel data using an adversarial technique. The task is interesting and relevant, especially for in low-resource language pair settings.\"\n\"The former set of works, while focused on machine translation also learns a translation table in the process.\"\n\"The authors seem aware of corpora used in previous works (Tiedemann, 2012) yet provide no comparison against any of these methods.\"\n\"While some of the bilingual lexicon extraction works are cited (Haghighi et al., 2008; Artetxe et al., 2017), they do not demonstrate how their approach performs against these baseline methods.\""
+      },
+      {
+        "review_id": "H1Qhqm9ez",
+        "influential_part": "\"The paper is very well-written and makes for a rather pleasant read\"\n\n\"There are some gaps in the awareness of the related work in the sub-field of bilingual lexicon induction, e.g. the work by Vulic & Moens (2016).\"\n\n\"In my view, to conclude, this is still a very nice paper, so I vote clear accept, in hope to see these minor flaws filtered out in the revision.\""
+      }
+    ]
+  },
+  "iclr_2018_r1ZdKJ-0W": {
+    "reviews": [
+      {
+        "review_id": "BkNHltugM",
+        "influential_part": "\"This paper is well-written and easy follow.\"\n\"I didn't find serious concern and therefore suggest an acceptance.\"\n\"Methodology 1. inductive ability: can generalize to unseen nodes without any further training 2. personalized ranking: the model uses natural ranking that embeddings of closer nodes (considers node pairs of any distance) should be closer in the embedding space, which is more general than prevailing first and second order proximity 3. sampling strategy: the proposed node-anchored sampling method gives unbiased estimates of loss function and successfully reduces the time complexity\""
+      },
+      {
+        "review_id": "HJhWAwsgM",
+        "influential_part": "1. \"The paper proposes to learn Gaussian embeddings for directed attributed graph nodes. Each node is associated to a Gaussian representation (mean and diagonal covariance matrix). The mean and diagonal representations for a node are learned as functions of the node attributes.\"\n2. \"The algorithm is unsupervised and optimizes a ranking loss: nodes at distance 1 in the graph are closer than nodes at distance 2, etc.\"\n3. \"The paper reads well. Using a ranking loss based on the node distance together with Gaussian embeddings is probably new, even if the novelty is not that big.\"\n4. \"The comparisons with unsupervised methods shows that the algorithm learns relevant representations.\"\n5. \"Overall the paper brings some new ideas.\""
+      },
+      {
+        "review_id": "H1j0rCeZz",
+        "influential_part": "\"This paper proposes Graph2Gauss (G2G), a node embedding method that embeds nodes in attributed graphs (can work w/o attributes as well) into Gaussian distributions rather than conventionally latent vectors.\"\n\n\"By doing so, G2G can reflect the uncertainty of a node's embedding.\"\n\n\"Overall, the paper is well-written and the contributions are remarkable.\""
+      }
+    ]
+  },
+  "iclr_2018_BJjquybCW": {
+    "reviews": [
+      {
+        "review_id": "BkIW6fYxz",
+        "influential_part": "\"Under certain assumptions, if the network contains a \"wide\u201c hidden layer, such that the layer width is larger than the number of training examples, then (with random weights) this layer almost surely extracts linearly independent features for the training examples.\"\n\n\"If the wide layer is at the top of all hidden layers, then the neural network can perfectly fit the training data.\"\n\n\"Overall, the paper presents several incremental improvement over existing theories. However, the novelty and the technical contribution are not sufficient for securing an acceptance.\""
+      },
+      {
+        "review_id": "rkvS6-9gG",
+        "influential_part": "The reviewer's feedback doesn't appear to directly influence the meta review as there is no clear line or comment from the reviewer's feedback addressing concern about the statement, or suggesting that the paper needs more work on its presentation. The feedback, as provided, only includes positive comments, which don't appear reflected in the meta review."
+      },
+      {
+        "review_id": "S136E0hZf",
+        "influential_part": "\"Under this and some additional technique conditions, the paper shows that this layer can extract linearly independent features and all critical points are local minimums.\"\n\n\"However, I find it uneasy to fully evaluate the merit of this paper, mainly because the \"wide\"-layer assumption seems somewhat artificial and makes the corresponding results somewhat expected.\"\n\n\"The mathematical intuition is that the severe overfitting induced by the wide layer essentially lifts the loss surface to be extremely flat so training to zero/small error becomes easy. This is not surprising.\""
+      },
+      {
+        "review_id": "HJ0nIZkfM",
+        "influential_part": "\"Most of my doubts about this paper come from the feeling that equivalent results could be obtained with a more elegant argument about perturbation theory, instead of something like the proof of Lemma A1. That being said, it's easy to voice such concerns, and I'm willing to believe that there might not exist a simple way to derive the same results with an approach more along the line of \"whatever your data, pick whatever small epsilon, and you can always have the desired properties by perturbing your data by that small epsilon in a random direction\". Have the authors tried this?\"\n\n\"I wished the paper was easier to read. Some of the concepts could have been illustrated to give the reader some way to visualize the intuitive notions.\"\n\n\"At the end of the day, if a friend asked me to summarize the paper, I would tell them: \"Features are basically full rank. Then they use a square loss and end up with an over-parametrized system, so they can achieve loss zero (i.e. global minimum) with a multitude of parameters values.\"\""
+      }
+    ]
+  },
+  "iclr_2018_H11lAfbCW": {
+    "reviews": [
+      {
+        "review_id": "SJHp-7Klz",
+        "influential_part": "1. \"The paper looks at empirically measuring neural network architecture expressivity by examining performance on a variety of complex datasets, measuring dataset complexity with algebraic topology.\"\n2. \"They provide a demonstration of this on two synthetic toy datasets in Figure 1, training two (very small -- 12 and 26 neuron) single hidden layer networks on these two datasets, where the smaller of the two networks is unable to learn the data distribution of the second dataset.\"\n3. \"The motivation to consider algebraic topology and dataset difficulty is interesting, but I think this method is ultimately ill suited and unable to be adapted to more complex and interesting settings.\"\n4. \"In particular, the majority of experiments and justification of this method comes from use on a low dimensional manifold with either known data distribution, or with a densely sampled manifold.\"\n5. \"Furthermore, while part of the motivation of this paper is to use dataset complexity measured with topology to help select architectures, experiments demonstrating that this might be useful are very rudimentary.\"\n6. \"On real datasets, exploring architectures does not seem to be done at all (Section 4.).\"\n7. \"This paper is not ready to be accepted.\""
+      },
+      {
+        "review_id": "B19Fsy5gM",
+        "influential_part": "\"The authors propose to use the homology of the data as a measurement of the expressibility of a deep neural network.\"\n\n\"The paper is mostly experimental.\"\n\n\"I do like the general idea of the paper. It has great potentials. However, it is much undercooked.\"\n\n\"* 1) the main message of the paper is unclear to me.\"\n\n\"* 4) Important papers about persistent homology in learning could be cited: Using persistent homology in deep convolutional neural network: Deep Learning with Topological Signatures C. Hofer, R. Kwitt, M. Niethammer and A. Uhl, NIPS 2017 Using persistent homology as kernels: Sliced Wasserstein Kernel for Persistence Diagrams Mathieu Carri\u00e8re, Marco Cuturi, Steve Oudot, ICML 2017.\" \n\n\"* 5) Minor comments: Small typos here and there: y axis label of Fig 5, conclusion section.\""
+      },
+      {
+        "review_id": "Sy4l2B9gG",
+        "influential_part": "\"The paper is largely inspired by a recent work of Bianchini et al. (2014) on upper bounds of Betti number sums for decision super-level sets of neural networks in different architectures. It explores empirically the relations between Betti numbers of input data and hidden unit complexity in a single hidden layer neural network, in a purpose of finding closer connections on topological complexity or expressibility of neural networks.\"\n\n\"They report the phenomenon of phase transition or turning points in training error as the number of hidden neurons changes in their experiment.\"\n\n\"For the first time, the paper connects the phenomenon with topological complexity of input data and decision super-level sets, as well as number of hidden units, which is inspiring.\"\n\n\"However, a closer look at the experimental study finds some inconsistencies or incompleteness which deserves further investigations.\"\n\n\"The study is restricted to 2-dimensional synthetic datasets. Although they applied topological tools to low-dimensional projection of some real data, it's purely topological data analysis. They didn't show any connection with the training or learning of neural networks. So this part is just preliminary but incomplete to the main topic of the paper.\"\n\n\"The authors need to provide more details about their method and experiments. For example, The author didn't show from which example fig6 is generated. For other figures appended at the end of the paper, there should also be detailed descriptions of the underlying experiments.\""
+      }
+    ]
+  },
+  "iclr_2018_H1A5ztj3b": {
+    "reviews": [
+      {
+        "review_id": "rJfAp3Zef",
+        "influential_part": "\"The paper discusses a phenomenon where neural network training in very specific settings can profit much from a schedule including large learning rates.\"\n\n\"However, this is not a general problem in neural network training and might not be generalizable to other datasets or architectures as the authors acknowledge.\"\n\n\"In the end, the actual gain of this paper is only in the form of a hypothesis but there is only very little enlightenment, especially as the only slightly theoretical contribution in section 5 does not predict the observed behavior.\"\n\n\"Personally i would not use the term \"convergence\" in this setting at all as the runs are very short and thus we might not be close to any region of convergence.\"\n\n\"The described phenomenon seems to depend strongly on the problem surface and might never be encountered on any problem aside of Cifar-10\"\n\n\"Only single runs are shown, considering the noise on those the results might not be reproducible.\"\n\n\"Experiments are not described in detail.\""
+      },
+      {
+        "review_id": "H1yQ04YxG",
+        "influential_part": "\"The authors demonstrate (a) fast convergence with cyclic learning rates and (b) evidence of large learning rates acting as regularization which improves performance on test sets \u2013 this is called \u201csuper-convergence\u201d. However, both these effects are only shown on a specific dataset, architecture, learning algorithm and hyper parameter setting.\"\n\n\"6. Experiments: This is a strong section where the authors show extensive reproducible experimentation to identify settings under which super-convergence works or does not work. However, the fact that the results only applies to CIFAR-10 dataset and could not be observed for ImageNet or other architectures is disappointing and heavily takes away from the significance of this work.\"\n\n\"Overall, the work is presented as a positive result in very specific conditions but it seems more like a negative result. It would be more appealing if the paper is presented as a negative result and strengthened by additional experimentation and theoretical backing.\""
+      },
+      {
+        "review_id": "Hyn-NPJbz",
+        "influential_part": "\"The phenomenon of a fast convergence rate for training resnet with cyclical learning rates under a few particular setting.\"\n\"The \"super-convergence\" occurs under special settings of hyper-parameters for resnet only and therefore I am concerned if it is of general interest for deep learning models.\"\n\"Also, the authors do not give a conclusive analysis under what condition it may happen.\"\n\"I feel most content of this paper (section 3, 4, 5) is observational results, and there is lack of solid analysis or discussion behind these observations.\""
+      }
+    ]
+  }
+}
